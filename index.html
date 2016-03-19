@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalambury</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+<div id="container-1">
+  <div id="questions">******</div>
+  <button id="showQuestion">Pokaż</button>
+</div>
+
+<div id="container-2">
+  <div id="round">Runda numer: 100 </div>
+  <button id="nextQuestions">Następna runda </button>
+  <button id="restart">Zacznij od nowa </button>
+  <div style="clear:both;"> </div>
+</div>
+<br />
+<div id="container-3">
+  
+  <div id="leftColumn">
+    <div class="team firstTeam">Pierwsza drużyna
+    	<button class="changeTeamNameButton">Zmień</button>
+    </div>  
+    <button class="addPoint">+</button>
+  </div>
+  
+  <div id="middleColumn">
+  		<div id="timer">
+        	<input class="counter minutes" type="number" max="60" min="0" value="0">
+        	<span id="separate">:</span>
+    		<input class="counter seconds" type="number" max="60" min="0" value="0">
+    	</div>
+    	<div id="controls">
+    		<button id="startTimer" class="timerButton">START</button>
+    		<button id="stopTimer" class="timerButton">STOP </button>
+    		<button id="restartTimer" class="timerButton">RESTARTUJ </button>
+    	</div>
+    
+  </div>
+  
+  <div id="rightColumn">
+    <div class="team firstTeam">Druga drużyna
+    	<button class="changeTeamNameButton">Zmień</button>
+    </div>  
+    <button class="addPoint">+</button>
+  </div>
+  
+</div>
+ 
+</body>
+</html>
