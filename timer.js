@@ -1,13 +1,13 @@
 "use strict";
 
 function counter() {
-     var minutes;
-     var seconds;
-     var interval;
-     var stopBoolean;
-     var noRepeat;
-     var $minutes = document.querySelector(".minutes");
-     var $seconds = document.querySelector(".seconds");
+     let minutes;
+     let seconds;
+     let interval;
+     let stopBoolean;
+     let noRepeat;
+     let $minutes = document.querySelector(".minutes");
+     let $seconds = document.querySelector(".seconds");
 
      document.querySelector("#startTimer").addEventListener("click", start);
      document.querySelector("#stopTimer").addEventListener("click", stop);
