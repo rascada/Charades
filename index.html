@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-
+<!--Jeszcze nie skończone... -->
 <div id="container-1">
   <div id="questions">******</div>
   <button id="showQuestion">Pokaż</button>
@@ -18,19 +18,22 @@
   <button id="restart">Zacznij od nowa </button>
   <div style="clear:both;"> </div>
 </div>
+<!-- <-...jeszcze nie skończone-->
 <br />
 <div id="container-3">
-  
   <div id="leftColumn">
-    <div class="team firstTeam">Pierwsza drużyna
+    <div class="team firstTeam">
+    	<span class="teamName">Pierwsza drużyna</span>
+    	<input type="text" class="changeTeamNameInput" maxLength="30">
     	<button class="changeTeamNameButton">Zmień</button>
+    	<button class="saveNameButton">Zapisz</button>
     </div>  
     <button class="addPoint">+</button>
     <div id="SVGcontainerLeft" class="SVGcontainer"></div>
   </div>
   
   <div id="middleColumn">
-  		<div id="timer">
+  	<div id="timer">
         	<input class="counter minutes" type="number" max="60" min="0" value="0">
         	<span id="separate">:</span>
     		<input class="counter seconds" type="number" max="60" min="0" value="0">
@@ -40,13 +43,14 @@
     		<button id="stopTimer" class="timerButton">STOP </button>
     		<button id="restartTimer" class="timerButton">RESTARTUJ </button>
     	</div>
-    
   </div>
-  <script type="text/javascript" src="timer.js"></script>
   
   <div id="rightColumn">
-    <div class="team firstTeam">Druga drużyna
+    <div class="team firstTeam">
+    	<span class="teamName">Druga drużyna</span>
+    	<input type="text" class="changeTeamNameInput" maxLength="30">
     	<button class="changeTeamNameButton">Zmień</button>
+    	<button class="saveNameButton">Zapisz</button>
     </div>  
     <button class="addPoint">+</button>
     <div id="SVGcontainerRight" class="SVGcontainer"> </div>
@@ -55,5 +59,6 @@
 </div>
   <script type="text/javascript" src="points.js"></script>
   <script type="text/javascript" src="timer.js"></script>
+  <script type="text/javascript" src="teamName.js"></script>
 </body>
 </html>
