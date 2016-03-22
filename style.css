@@ -73,7 +73,6 @@ body {
 .team {
   width: 15em;
   height: 1.5em;
-  transform: skewX(160deg);
   font-size: 2em;
   margin: auto;
   border-bottom: 0.1em solid red;
@@ -94,13 +93,25 @@ body {
   left: 40%;
   outline:none;
 }
+.SVGcontainer {
+  width: 100%;
+  height: 22.3em;
+  overflow-y: auto;
+}
+.eachSVG {
+  transform: scale(.5,.5);
+  margin-right: -3em;
+  margin-left: -.5em;
+  margin-bottom: -3em;
+}
 #middleColumn{
   width: 15em;
   height: 10em;
 }
 #timer {
   width: 15em;
-  height: 5em;
+  height: 3em;
+  border-bottom: .3em solid transparent;
 }
 .timerButton{
   background-color: pink;
