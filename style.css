@@ -77,12 +77,29 @@ body {
   margin: auto;
   border-bottom: 0.1em solid red;
 }
-.changeTeamNameButton{
+.teamName {
+  display: inline;
+}
+.changeTeamNameInput{
+  width: 16em;
+  height: 2em;
+  background-color: transparent;
+  border: .2em solid #444;
+  transform: skew(160deg);
+  display: none;
+}
+.changeTeamNameButton, .saveNameButton{
   background-color: transparent;
   border-color: transparent;
   border-width: 0;
   outline: none;
   font-size: .4em;
+}
+.changeTeamNameButton {
+  display: inline;
+}
+.saveNameButton {
+  display: none;
 }
 .addPoint {
   background-color: transparent;
