@@ -1,5 +1,4 @@
 "use strict";
-
 function counter() {
      let minutes;
      let seconds;
@@ -8,6 +7,7 @@ function counter() {
      let noRepeat;
      let $minutes = document.querySelector(".minutes");
      let $seconds = document.querySelector(".seconds");
+     let $timer = document.querySelector("#timer");
 
      document.querySelector("#startTimer").addEventListener("click", start);
      document.querySelector("#stopTimer").addEventListener("click", stop);
@@ -15,15 +15,29 @@ function counter() {
 
      function start() {
           if (!noRepeat) {
-               seconds = $seconds.value;
-               minutes = $minutes.value;
+               if($minutes.value>=0 && $seconds.value>=0){
+                    seconds = $seconds.value;
+                    minutes = $minutes.value;  
+                    $timer.style.borderBottomColor = "transparent";
+               }else if($minutes.value<0 || $seconds.value<0){
+                    alert("Wartości muszą być większe od 0")
+                    $timer.style.borderBottomStyle = "solid";
+                    $timer.style.borderBottomWidth = ".3em";
+                    $timer.style.borderBottomColor = "red";
+                    return;
+               }else if($seconds.value>60){
+                    alert("Sekundy nie mogą być większe od 60")
+                    $timer.style.borderBottomStyle = "solid";
+                    $timer.style.borderBottomWidth = ".3em";
+                    $timer.style.borderBottomColor = "red";
+                    return;
+               };
                interval = setInterval(function() {
                     if (seconds == 0) {
                          if (minutes == 0) {
                               clearInterval(interval);
                               noRepeat = false;
                               return;
-                              
                          } else {
                               minutes--;
                               seconds = 60;
@@ -57,3 +71,4 @@ function counter() {
           };
      };
 };
+counter();
