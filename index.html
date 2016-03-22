@@ -27,35 +27,26 @@
     	<input type="text" class="changeTeamNameInput" maxLength="30">
     	<button class="changeTeamNameButton">Zmień</button>
     	<button class="saveNameButton">Zapisz</button>
-    </div>  
+    </div>
     <button class="addPoint" id="leftPointsButton">+</button>
     <div id="SVGcontainerLeft" class="SVGcontainer"></div>
   </div>
-  
+
   <div id="middleColumn">
-  	<div id="timer">
-        	<input class="counter minutes" type="number" max="60" min="0" value="0">
-        	<span id="separate">:</span>
-    		<input class="counter seconds" type="number" max="60" min="0" value="0">
-    	</div>
-    	<div id="controls">
-    		<button id="startTimer" class="timerButton">START</button>
-    		<button id="stopTimer" class="timerButton">STOP </button>
-    		<button id="restartTimer" class="timerButton">RESTARTUJ </button>
-    	</div>
+		<timer-kamila></timer-kamila>
   </div>
-  
+
   <div id="rightColumn">
     <div class="team firstTeam">
     	<span class="teamName">Druga drużyna</span>
     	<input type="text" class="changeTeamNameInput" maxLength="30">
     	<button class="changeTeamNameButton">Zmień</button>
     	<button class="saveNameButton">Zapisz</button>
-    </div>  
+    </div>
     <button class="addPoint" id="rightPointsButton">+</button>
     <div id="SVGcontainerRight" class="SVGcontainer"> </div>
   </div>
-  
+
 </div>
   <script type="text/javascript" src="points.js"></script>
   <script type="text/javascript" src="timer.js"></script>

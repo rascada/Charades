@@ -125,41 +125,11 @@ body {
   width: 15em;
   height: 10em;
 }
-#timer {
-  width: 15em;
-  height: 3em;
-  border-bottom: .3em solid transparent;
-}
-.timerButton{
-  background-color: pink;
-  border: none;
-  margin-left: .3em;
-  outline: none;
-  font-size: 1.3em;
-}
-#controls {
-  width: 10.5em;
-  height: 5em;
-  margin: auto;
-}
-#restartTimer {
-  margin-left: 10%;
-  margin-top: 0.2em;
-}
-.counter {
-  width: 1.3em;
-  height: 1em;
-  background-color: transparent;
-  font-size: 3em;
-  text-align: center;
-  border: transparent;
-  outline: none;
-}
 #separate {
   font-size: 4em;
 }
 /*
-.counter::-webkit-inner-spin-button { 
+.counter::-webkit-inner-spin-button {
     -webkit-appearance: none;
     cursor:pointer;
     display:block;
